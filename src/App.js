@@ -2,7 +2,7 @@
 import './App.css';
 // import './Components/Sidebar.css'
 // import Sidebar from './Components/Sidebar';
-import Admindashboard from './Scenes/Admindashboard';
+import AdminDashboard from './screens/adminDashboard';
 
 
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       {/* <Sidebar /> */}
-      <Admindashboard />
+      <AdminDashboard />
     </div>
   );
 }
