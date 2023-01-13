@@ -1,3 +1,9 @@
+
+
+//basic deatils of Manager in Admin Dashboard
+
+
+
 import React from "react";
 import { Sidebarlist } from "./Sidebarlist";
 import { Setting } from "./Sidebarlist";

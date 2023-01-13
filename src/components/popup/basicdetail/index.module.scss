@@ -1,0 +1,92 @@
+.basicDetail {
+    height: 400px;
+    width: 600px;
+    background-color: rgb(215, 209, 209);
+    border-radius: 10px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(8.5px);
+}
+
+.popupHeader {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    border-radius: 3px white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: white;
+}
+
+.close {
+    color: black;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    align-items: center;
+}
+
+.close:hover {
+    background-color: rgb(194, 185, 185);
+}
+
+// .popupMain {
+//     text-align: left;
+//     justify-content: space-evenly;
+// }
+
+.form {
+    display: inline-block;
+    // background-color: green;
+    line-height: 2;
+    width: 100%;
+    height: auto;
+}
+
+label {
+    width: 180px;
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input {
+    width: 200px;
+    flex: 70%;
+    box-shadow: none;
+    box-sizing: 30px;
+    height: 25px;
+}
+
+
+.performanceButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 50px;
+}
+
+.button {
+    height: 40px;
+    width: 140px;
+    border-radius: 6px;
+    border: 0px;
+    // font-weight: bold;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: rgb(194, 185, 185);
+}
