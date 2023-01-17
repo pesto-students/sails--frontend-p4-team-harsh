@@ -6,7 +6,7 @@
     padding: 90px 0 90px 0;
 }
 
-.sub-main {
+.subMain {
     display: flex;
     justify-content: center;
     height: 550px;
@@ -23,15 +23,15 @@
     padding: 20px;
 }
 
-.image-container {
-    background-color: gray;
-    border-radius: 150px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: 115px;
-    width: 115px;
-}
+// .image-container {
+//     background-color: gray;
+//     border-radius: 150px;
+//     align-items: center;
+//     justify-content: center;
+//     display: flex;
+//     height: 115px;
+//     width: 115px;
+// }
 
 .profile {
     height: 100px;
@@ -40,7 +40,7 @@
     border-radius: 130px;
 }
 
-.loginclass {
+.loginClass {
     text-align: center;
 
 }
@@ -69,7 +69,7 @@ input {
     padding-left: 80px;
 }
 
-.second-input {
+.secondInput {
     padding-top: 20px;
 }
 
@@ -84,11 +84,11 @@ input {
 
 }
 
-.buttonclass {
+.buttonClass {
     padding-top: 30px;
 }
 
-.forgotpassword {
+.forgotPassword {
     padding-top: 20px;
     text-align: center;
 }

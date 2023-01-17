@@ -1,0 +1,44 @@
+@import "../../styles/variables/colors";
+
+.main {
+    height: 275px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    height: 55%;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+hr {
+    display: block;
+    height: 5px;
+    border: 0;
+    border-top: 1px solid rgb(9, 9, 9);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.count {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
