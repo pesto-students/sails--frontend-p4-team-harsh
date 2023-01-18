@@ -1,0 +1,25 @@
+.performance {
+    background-color: rgb(215, 209, 209);
+
+    height: 300px;
+    width: 400px;
+}
+
+.title {
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+
+}
+
+.main {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(215, 209, 209);
+}

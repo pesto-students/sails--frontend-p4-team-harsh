@@ -1,18 +1,18 @@
 @import "../../styles/variables/colors";
 
 .main {
-    height: 275px;
+    height: 100px;
     width: 275px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    justify-content: space-between;
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
 }
 
 .title {
-    height: 55%;
-    font-size: 40px;
+    height: auto;
+    font-size: 20px;
     text-align: center;
     font-weight: bold;
     display: flex;
@@ -22,20 +22,12 @@
 }
 
 
-hr {
-    display: block;
-    height: 5px;
-    border: 0;
-    border-top: 1px solid rgb(9, 9, 9);
-    margin: 0;
-    padding: 0;
-}
 
 
 
 
 .count {
-    height: 40%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;

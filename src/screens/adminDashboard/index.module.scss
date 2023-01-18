@@ -15,10 +15,17 @@
     height: 50px;
     width: 100%;
     font-size: 35px;
-    background-color: $colorBackgroundPrimary;
-    color: $colorTextSecondary;
+    // background-color: $colorBackgroundPrimary;
+    color: black;
 }
 
+.containerMain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .main {
     display: flex;
@@ -31,26 +38,34 @@
 
 .container1 {
     background-color: bisque;
-    height: 275px;
-    width: 275px;
+    height: 100px;
+    width: 30%;
 }
 
 .container2 {
     background-color: aquamarine;
-    height: 275px;
-    width: 275px;
+    height: 100px;
+    width: 30%;
 }
 
 .container3 {
     background-color: blanchedalmond;
-    height: 275px;
-    width: 275px;
+    height: 100px;
+    width: 30%;
+}
+
+.subMain {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+
 }
 
 .container4 {
     background-color: burlywood;
     height: 275px;
-    width: 275px;
+    width: 30%;
 }
 
 .barChart {
@@ -58,10 +73,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // margin-top: 0px;
-    margin: 0px 20px 20px 20px;
-    height: 300px;
-    width: 97%;
+    // margin: 0px 20px 20px 20px;
+    height: 275px;
+    width: 65%;
     background-color: chocolate;
 
 }
