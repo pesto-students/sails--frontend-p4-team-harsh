@@ -38,7 +38,7 @@ export const Setting = [
   {
     title: "Reset Password",
     icon: <Reset />,
-    link: "./reset-password",
+    link: "./resetpassword",
   },
   {
     title: "Logout",

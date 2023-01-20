@@ -1,22 +1,49 @@
+@import "../../styles/variables/colors";
+
+
 .conversionRate {
-    height: 150px;
+    height: 100px;
     width: 400px;
-    background-color: green;
+    background-color: $colorBackgroundWhite;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
 }
 
-.container {
-    display: flex;
-    width: 100%;
+// .container {
+//     display: flex;
+//     width: auto;
 
+// }
+.main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .title {
     font-size: 30px;
     display: flex;
-    width: 70%;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: $colorTextComponent;
 }
 
+
+
 .value {
+    height: 100%;
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+
 }

@@ -9,14 +9,14 @@ const CoversionRate = () => {
     return (
         <div>
             <div className={styles.conversionRate}>
-                <div className={styles.container}>
-                    <div className={styles.main}>
-                        <p className={styles.title}>Conversion Rate</p>
-                        <DatePicker selected={selectedDate}
-                            onChange={date => SetSelectedDate(date)} />
-                    </div>
-                    <p className={styles.value}>100%</p>
+                {/* <div className={styles.container}> */}
+                <div className={styles.main}>
+                    <p className={styles.title}>Conversion Rate</p>
+                    <DatePicker className={styles.datepicker} selected={selectedDate}
+                        onChange={date => SetSelectedDate(date)} />
                 </div>
+                <p className={styles.value}>100%</p>
+                {/* </div> */}
             </div>
         </div>
     )
