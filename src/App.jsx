@@ -6,14 +6,14 @@ import AdminDashboard from "./screens/adminDashboard";
 import LoginPage from "./screens/loginPage";
 import Leads from "./screens/leads";
 import Manager from "./screens/manager";
-import Salesteam from "./screens/salesteam";
-// import Basicdetail from "./components/popup/basicdetail";
-// import Performance from "./components/popup/performance";
+import SalesTeam from "./screens/salesteam";
+import Basicdetail from "./components/popup/basicdetail";
+import Performance from "./components/popup/performance";
 // import DeleteUser from "./components/popup/deleteuser";
 // import Logout from "./components/popup/logout";
 // import NewLeads from "./components/newleads";
 import Createnewuser from "./screens/createnewuser";
-import Resetpassword from "./screens/resetpassword";
+import ResetPassword from "./screens/resetpassword";
 // import Conversionrate from "./components/conversionrate";
 
 function App() {
@@ -25,13 +25,14 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/leads" element={<Leads />} />
           <Route path="/manager" element={<Manager />} />
-          <Route path="/salesteam" element={<Salesteam />} />
-          <Route path="/resetpassword" element={<Resetpassword />} />
-
-
+          <Route path="/sales-team" element={<SalesTeam />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
         </Routes>
       </Layout>
-      {/* <Basicdetail /> */}
+      {/* <Basicdetail
+        isOpen={true}
+        onCloseHandle={() => console.log("Clicked close")}
+      /> */}
       {/* <Performance /> */}
       {/* <DeleteUser message="Are you sure you want to delete user?" /> */}
       {/* <Logout /> */}
@@ -39,7 +40,6 @@ function App() {
       {/* <Createnewuser /> */}
       {/* <Resetpassword /> */}
       {/* <Conversionrate /> */}
-
     </div>
   );
 }

@@ -1,0 +1,21 @@
+@import "../../../styles/variables/mixins";
+
+.containerMain {
+  position: relative;
+}
+
+.container {
+  @include absCenter;
+  @include popupShadow;
+  z-index: 600;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 550;
+  backdrop-filter: brightness(50%);
+}
