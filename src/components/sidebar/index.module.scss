@@ -5,7 +5,7 @@
   padding: 10px 5px;
   width: 220px;
   flex-shrink: 0;
-  background-color: $colorBackgroundPrimary;
+  background-color: $colorBackgroundSecondary;
   display: flex;
   flex-direction: column;
   color: $colorTextSecondary;
@@ -41,12 +41,13 @@
 
 .Sidebardata .row:hover {
   cursor: pointer;
-  background-color: $colorBackgroundSecondary;
+  background-color: $colorBackgroundPrimary;
   color: $colorTextPrimary;
 }
 
 .Sidebardata #active {
-  background-color: $colorBackgroundSecondary;
+  background-color: $colorActiveTab;
+  color: $colorTextPrimary;
 }
 
 .row #icon {
@@ -78,13 +79,13 @@
 
 .Setting .row-s:hover {
   cursor: pointer;
-  background-color: $colorBackgroundSecondary;
+  background-color: $colorBackgroundPrimary;
   color: $colorTextPrimary;
 }
 
 .Setting #active {
-  background-color: $colorBackgroundSecondary;
-  color: $colorTextSecondary;
+  background-color: $colorActiveTab;
+  color: $colorTextPrimary;
 }
 
 .row-s #icon-s {

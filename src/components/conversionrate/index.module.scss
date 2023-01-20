@@ -1,0 +1,22 @@
+.conversionRate {
+    height: 150px;
+    width: 400px;
+    background-color: green;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+
+}
+
+.title {
+    font-size: 30px;
+    display: flex;
+    width: 70%;
+}
+
+.value {
+    display: flex;
+    align-items: flex-end;
+}

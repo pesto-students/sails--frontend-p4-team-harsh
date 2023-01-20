@@ -23,7 +23,7 @@ function Sidebar() {
             <Link to={val.link} key={key}>
               <li
                 className={styles.row}
-                id={window.location.pathname === val.link ? "active" : " "}
+                id={window.location.pathname === val.link ? "active" : ""}
               >
                 <div id="icon">{val.icon}</div>
                 <div id="title">{val.title}</div>
