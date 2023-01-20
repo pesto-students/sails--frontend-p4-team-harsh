@@ -26,8 +26,7 @@ const Barchart = () => {
     },
     yAxis: {
       title: {
-        // categories: ["Jan", "Feb", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-        // text: "Fruit eaten"
+
       }
     },
 
