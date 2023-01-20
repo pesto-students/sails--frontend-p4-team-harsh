@@ -2,12 +2,15 @@
 
 .main {
     height: 100px;
-    width: 275px;
+    width: auto;
     display: flex;
     justify-content: center;
     justify-content: space-between;
     margin: 0;
     padding-left: 10px;
+    background-color: $colorBackgroundWhite;
+    border-radius: 5px;
+
 }
 
 .title {
@@ -18,6 +21,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 20px;
+    color: $colorTextComponent;
 
 }
 
@@ -33,4 +38,5 @@
     align-items: center;
     font-size: 40px;
     font-weight: bold;
+    padding-right: 30px;
 }

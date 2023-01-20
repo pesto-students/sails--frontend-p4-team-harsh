@@ -9,6 +9,7 @@
     flex-direction: column;
     overflow-y: auto;
     // flex-wrap: wrap;
+    background-color: $colorBackgroundPrimary
 }
 
 .header {
@@ -17,6 +18,8 @@
     font-size: 35px;
     // background-color: $colorBackgroundPrimary;
     color: black;
+    padding: 10px;
+    padding-left: 20px;
 }
 
 .containerMain {
@@ -63,7 +66,6 @@
 }
 
 .container4 {
-    background-color: burlywood;
     height: 275px;
     width: 30%;
 }
@@ -73,9 +75,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // margin: 0px 20px 20px 20px;
     height: 275px;
     width: 65%;
-    background-color: chocolate;
-
 }
