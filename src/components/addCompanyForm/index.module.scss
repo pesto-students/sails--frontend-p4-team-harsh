@@ -14,10 +14,8 @@
     border-radius: 10px;
     @include boxShadow;
 
-    div {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
+    label {
+      margin-bottom: 10px;
     }
 
     input {
@@ -39,6 +37,20 @@
       &[type="number"] {
         -moz-appearance: textfield;
       }
+    }
+  }
+
+  .form {
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    &__group {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
     }
   }
 }

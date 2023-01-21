@@ -1,4 +1,5 @@
 @import "../../styles/variables/colors";
+@import "../../styles//variables/mixins";
 
 /* Sidebar icons */
 .sideBar {
@@ -11,6 +12,10 @@
   color: $colorTextSecondary;
   overflow: hidden;
   font-size: 2rem;
+
+  @include respond(phone) {
+    display: none;
+  }
 
   a {
     text-decoration: none;
@@ -95,7 +100,6 @@
   background-color: $colorActiveTab;
   color: $colorTextPrimary;
 }
-
 
 .Setting #active {
   background-color: $colorActiveTab;
