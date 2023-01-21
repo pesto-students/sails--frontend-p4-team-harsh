@@ -5,7 +5,7 @@ import styles from "./index.module.scss";
 
 const initState = {
   name: "",
-  apiKey: "",
+  apiKey: "ADSLKFJOWAEJFLAKJSDKLFDJF234243234",
   validity: true,
   userCount: 0,
 };
