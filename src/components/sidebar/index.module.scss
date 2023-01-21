@@ -74,7 +74,7 @@
   margin-top: auto;
 }
 
-.Setting .row-s {
+.Setting .rowSetting {
   height: 50px;
   padding-left: 10px;
   list-style-type: none;
@@ -82,25 +82,31 @@
   display: flex;
   align-items: center;
   gap: 10px;
+
+  &--active {
+    background-color: $colorActiveTab;
+    color: $colorTextPrimary;
+  }
 }
 
-.Setting .row-s:hover {
+.Setting .rowSetting:hover {
   cursor: pointer;
-  background-color: $colorBackgroundPrimary;
+  background-color: $colorActiveTab;
   color: $colorTextPrimary;
 }
+
 
 .Setting #active {
   background-color: $colorActiveTab;
   color: $colorTextPrimary;
 }
 
-.row-s #icon-s {
+.rowSetting #icon-s {
   flex: 30%;
   display: grid;
   place-items: center;
 }
 
-.row-s #title-s {
+.rowSetting #title-s {
   flex: 70%;
 }

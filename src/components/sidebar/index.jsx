@@ -22,9 +22,7 @@ function Sidebar() {
           return (
             <Link to={val.link} key={key}>
               <li
-                className={`${styles.row} ${
-                  activeTab === val.link ? styles["row--active"] : ""
-                }`}
+                className={`${styles.row} ${activeTab === val.link ? styles["row--active"] : ""}`}
                 onClick={() => setActiveTab(val.link)}
               >
                 <div id="icon">{val.icon}</div>
@@ -40,7 +38,7 @@ function Sidebar() {
           return (
             <Link to={val.link} key={key}>
               <li
-                className={styles["row-s"]}
+                className={`${styles.rowSetting} ${activeTab === val.link ? styles["rowSetting--active"] : ""}`}
                 onClick={() => setActiveTab(val.link)}
               >
                 <div id="icon-s">{val.icon}</div>

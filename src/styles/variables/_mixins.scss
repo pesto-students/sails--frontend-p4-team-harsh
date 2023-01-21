@@ -1,3 +1,5 @@
+@import "./colors";
+
 @mixin absCenter {
   position: fixed;
   top: 50%;
@@ -16,6 +18,8 @@
   box-shadow: 2px 2px rgb(152, 150, 150);
   border-radius: 10px;
   border: none;
+  background-color: darken($colorBackgroundPrimary , 10%);
+
 }
 
 // MEDIA QUERY MANAGER

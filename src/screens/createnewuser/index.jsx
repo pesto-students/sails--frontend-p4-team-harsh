@@ -1,51 +1,51 @@
 import React from 'react';
 import styles from "./index.module.scss"
 
-const createnewuser = () => {
+const createNewuser = () => {
     return (
         <div className={styles.main}>
             <div className={styles.title}><p>Create New User</p></div>
-            <div className={styles.subMain}>
+            <div>
                 <form className={styles.form}>
-                    <label>
+                    <label className={styles.label}>
                         Name
                         <br />
-                        <input type="text" id="name" placeholder="Enter name" />
+                        <input className={styles.input} type="text" id="name" placeholder="Enter name" />
                     </label>
                     <br />
 
-                    <label>
+                    <label className={styles.label}>
                         Role
                         <br />
-                        <input type="text" id="role" placeholder="Manager" />
+                        <input className={styles.input} type="text" id="role" placeholder="Manager" />
                     </label>
                     <br />
 
-                    <label>
+                    <label className={styles.label}>
                         Contact no
                         <br />
-                        <input type="text" id="contact" placeholder="Enter Contact no" />
+                        <input className={styles.input} type="text" id="contact" placeholder="Enter Contact no" />
                     </label>
                     <br />
 
-                    <label>
+                    <label className={styles.label}>
                         Email
                         <br />
-                        <input type="email" id="email" placeholder="Enter Email" />
+                        <input className={styles.input} type="email" id="email" placeholder="Enter Email" />
                     </label>
                     <br />
 
-                    <label>
+                    <label className={styles.label}>
                         Password
                         <br />
-                        <input type="password" id="password" placeholder="Enter Password" />
+                        <input className={styles.input} type="password" id="password" placeholder="Enter Password" />
                     </label>
                     <br />
 
-                    <label>
+                    <label className={styles.label}>
                         Confirm Password
                         <br />
-                        <input type="password" id="confirmPassword" placeholder="Enter Password" />
+                        <input className={styles.input} type="password" id="confirmPassword" placeholder="Enter Password" />
                     </label>
                     <br />
 
@@ -61,4 +61,4 @@ const createnewuser = () => {
     )
 }
 
-export default createnewuser;
+export default createNewuser;

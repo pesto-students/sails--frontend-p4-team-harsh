@@ -12,7 +12,7 @@ import Performance from "./components/popup/performance";
 // import DeleteUser from "./components/popup/deleteuser";
 // import Logout from "./components/popup/logout";
 // import NewLeads from "./components/newleads";
-import Createnewuser from "./screens/createnewuser";
+// import Createnewuser from "./screens/createnewuser";
 import ResetPassword from "./screens/resetpassword";
 // import Conversionrate from "./components/conversionrate";
 

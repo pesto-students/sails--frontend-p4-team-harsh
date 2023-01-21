@@ -1,6 +1,19 @@
 @import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
 
 .main {
     background-color: $colorBackgroundPrimary;
     width: 100%;
+}
+
+.button {
+    @include button;
+    width: 200px;
+    background-color: $colorActiveTab;
+    color: $colorTextSecondary;
+}
+
+.buttonDiv {
+    width: 100%;
+
 }

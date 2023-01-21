@@ -13,7 +13,7 @@ const Index = ({ leadsData, openDetail }) => {
           <th>Action</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className={styles.tbody}>
         {leadsData.data.map((item, index) => (
           <tr key={`leads-row-${index}`}>
             {Object.values(item).map((value, index) => (
