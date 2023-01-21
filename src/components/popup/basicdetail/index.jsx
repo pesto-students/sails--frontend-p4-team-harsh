@@ -35,24 +35,36 @@ const Index = ({ isOpen, onCloseHandle }) => {
           <div className={styles.basicDetail}>
             <div className={styles.popupMain}>
               <form className={styles.form}>
-                <label>Name</label>
-                <input type="text" id="detail" placeholder="Enter name" />
-                <br />
-
-                <label>Role</label>
-                <input type="text" id="detail" placeholder="Manager" />
-                <br />
-
-                <label> Contact Number</label>
+                <label htmlFor="basic-detail-name">Name</label>
                 <input
                   type="text"
-                  id="detail"
+                  id="basic-detail-name"
+                  placeholder="Enter name"
+                />
+                <br />
+
+                <label htmlFor="basic-detail-type">Role</label>
+                <input
+                  type="text"
+                  id="basic-detail-type"
+                  placeholder="Manager"
+                />
+                <br />
+
+                <label htmlFor="basic-detail-number"> Contact Number</label>
+                <input
+                  type="number"
+                  id="basic-detail-number"
                   placeholder="Enter contact number"
                 />
                 <br />
 
-                <label>Email</label>
-                <input type="email" id="detail" placeholder="Enter Email" />
+                <label htmlFor="basic-detail-email">Email</label>
+                <input
+                  type="email"
+                  id="basic-detail-email"
+                  placeholder="Enter Email"
+                />
                 <br />
               </form>
             </div>

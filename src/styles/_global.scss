@@ -41,3 +41,13 @@ body {
   box-sizing: border-box;
   font-size: 1.6rem;
 }
+
+.button-primary {
+  padding: 10px 25px;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  @include boxShadow;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

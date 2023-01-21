@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import Table from "../../components/table";
 import managerMockData from "./manager.mock.json";
 import styles from "./index.module.scss";
-import BasicDetail from "../../components/popup/basicdetail";
 import Searchbar from "../../components/searchbar";
+import BasicDetail from "../../components/popup/basicdetail";
 import DeleteUser from "../../components/popup/deleteuser";
+import CreateNewUser from "../../components/createNewUser";
 
 const Index = () => {
   const [isDetailOpen, setIsDetailOpen] = useState(false);
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
+  const [isAddUserOpen, setIsAddUserOpen] = useState(false);
 
   return (
     <div className={styles.main}>
@@ -17,7 +19,12 @@ const Index = () => {
       </div>
 
       <div className={styles.buttonDiv}>
-        <button className={styles.button}>Add Manager</button>
+        <button
+          className={styles.button}
+          onClick={() => setIsAddUserOpen(true)}
+        >
+          Add Manager
+        </button>
       </div>
       <Table
         leadsData={managerMockData}
@@ -25,6 +32,8 @@ const Index = () => {
         openDelete={() => setIsDeleteOpen(true)}
         type="managers"
       />
+
+      {/* Modals */}
       <BasicDetail
         isOpen={isDetailOpen}
         onCloseHandle={() => setIsDetailOpen(false)}
@@ -33,6 +42,10 @@ const Index = () => {
         isOpen={isDeleteOpen}
         onCloseHandle={() => setIsDeleteOpen(false)}
         message="Are you sure you want to delete user?"
+      />
+      <CreateNewUser
+        isOpen={isAddUserOpen}
+        onCloseHandle={() => setIsAddUserOpen(false)}
       />
     </div>
   );

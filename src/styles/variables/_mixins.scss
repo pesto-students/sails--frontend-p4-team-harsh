@@ -11,6 +11,10 @@
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
+@mixin boxShadow {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
 @mixin button {
   height: 35px;
   // width: 120px;
