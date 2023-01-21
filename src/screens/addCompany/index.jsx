@@ -5,8 +5,8 @@ import styles from "./index.module.scss";
 
 const initState = {
   name: "",
-  apiKey: "ADSLKFJOWAEJFLAKJSDKLFDJF234243234",
-  validity: true,
+  //   apiKey: "ADSLKFJOWAEJFLAKJSDKLFDJF234243234",
+  //   validity: true,
   userCount: 0,
 };
 
