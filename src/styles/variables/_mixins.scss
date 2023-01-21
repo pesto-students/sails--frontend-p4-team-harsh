@@ -13,13 +13,13 @@
 
 @mixin button {
   height: 35px;
-  width: 120px;
+  // width: 120px;
   font-size: 18px;
-  box-shadow: 2px 2px rgb(152, 150, 150);
-  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
   border: none;
-  background-color: darken($colorBackgroundPrimary , 10%);
-
+  cursor: pointer;
+  background-color: darken($colorBackgroundPrimary, 10%);
 }
 
 // MEDIA QUERY MANAGER
