@@ -2,18 +2,18 @@
 // import background from "./login images/logo.jpeg";
 // import password from "./login images/passwordlogo.png";
 import React from "react";
-import styles from './index.module.scss';
+import styles from "./index.module.scss";
 
 function App() {
   return (
     <div className={styles.main}>
       <div className={styles.subMain}>
         <div>
-          <div className={styles.image}>
-            {/* <div className="image-container">
+          {/* <div className={styles.image}>
+            <div className="image-container">
               <img src={background} alt="profile image" className="profile" />
-            </div> */}
-          </div>
+            </div>
+          </div> */}
           <div>
             <h1 className={styles.loginClass}>LOGIN HERE</h1>
             <div>
