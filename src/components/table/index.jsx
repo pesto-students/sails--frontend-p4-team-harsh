@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./index.module.scss";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-const Index = ({ leadsData, openDetail, openDelete, type }) => {
+const Index = ({ leadsData, openDetail, openDelete, type, disableUser }) => {
   return (
     <table className={styles.container}>
       <thead>
@@ -14,6 +14,10 @@ const Index = ({ leadsData, openDetail, openDelete, type }) => {
             <>
               <th>CTA</th>
               <th>Reschedule</th>
+            </>
+          ) : type === "companies" ? (
+            <>
+              <th>Disable</th>
             </>
           ) : (
             <>
@@ -36,6 +40,12 @@ const Index = ({ leadsData, openDetail, openDelete, type }) => {
                 </td>
                 <td>
                   <input type="date" />
+                </td>
+              </>
+            ) : type === "companies" ? (
+              <>
+                <td>
+                  <button onClick={disableUser}>Disable</button>
                 </td>
               </>
             ) : (
