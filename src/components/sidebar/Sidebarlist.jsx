@@ -19,14 +19,14 @@ export const Sidebarlist = [
     link: "./leads",
   },
   {
-    title: "Manager",
+    title: "Managers",
     icon: <Manager />,
     link: "./manager",
   },
   {
     title: "Sales Team",
     icon: <SalesTeam />,
-    link: "./salesTeam",
+    link: "./sales-team",
   },
 ];
 export const Setting = [
@@ -38,7 +38,7 @@ export const Setting = [
   {
     title: "Reset Password",
     icon: <Reset />,
-    link: "./resetpassword",
+    link: "./reset-password",
   },
   {
     title: "Logout",
