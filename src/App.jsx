@@ -7,9 +7,7 @@ import LoginPage from "./screens/loginPage";
 import Leads from "./screens/leads";
 import Manager from "./screens/manager";
 import SalesTeam from "./screens/salesteam";
-import Basicdetail from "./components/popup/basicdetail";
-import Performance from "./components/popup/performance";
-// import DeleteUser from "./components/popup/deleteuser";
+
 // import Logout from "./components/popup/logout";
 // import NewLeads from "./components/newleads";
 // import Createnewuser from "./screens/createnewuser";
@@ -29,12 +27,7 @@ function App() {
           <Route path="/reset-password" element={<ResetPassword />} />
         </Routes>
       </Layout>
-      {/* <Basicdetail
-        isOpen={true}
-        onCloseHandle={() => console.log("Clicked close")}
-      /> */}
-      {/* <Performance /> */}
-      {/* <DeleteUser message="Are you sure you want to delete user?" /> */}
+
       {/* <Logout /> */}
       {/* <NewLeads message="New Leads Today" /> */}
       {/* <Createnewuser /> */}

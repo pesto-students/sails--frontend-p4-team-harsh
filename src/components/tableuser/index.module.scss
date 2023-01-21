@@ -1,41 +1,42 @@
 @import "../../styles/variables/colors";
 
 .container {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 20px;
-    min-width: 400px;
-    width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 20px;
+  min-width: 400px;
+  width: 100%;
 }
 
 .container th {
-    background-color: lighten($colorActiveTab , 10%);
-    color: $colorTextSecondary;
-    text-align: center;
-    padding: 12px 15px;
+  background-color: lighten($colorActiveTab, 10%);
+  color: $colorTextSecondary;
+  text-align: center;
+  padding: 12px 15px;
 }
 
 .tbody td {
-    padding: 12px 15px;
-    text-align: center;
-    color: $colorTextComponent;
+  padding: 12px 15px;
+  text-align: center;
+  color: $colorTextComponent;
 }
 
 .tbody tr {
-    border-bottom: 1px solid;
+  border-bottom: 1px solid;
 }
 
 .tbody tr:nth-of-type(even) {
-    background-color: darken($colorBackgroundPrimary , 10%);
+  background-color: darken($colorBackgroundPrimary, 10%);
 }
 
 .tbody tr:last-of-type {
-    border-bottom: 4px solid $colorActiveTab;
+  border-bottom: 4px solid $colorActiveTab;
 }
 
 .tbody button {
-    box-shadow: 2px 2px rgb(152, 150, 150);
-    border-radius: 5px;
-    border: none;
-    width: 80px;
+  box-shadow: 2px 2px rgb(152, 150, 150);
+  border-radius: 5px;
+  border: none;
+  width: 80px;
+  cursor: pointer;
 }

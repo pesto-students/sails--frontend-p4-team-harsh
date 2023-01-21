@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Sidebar() {
   const [activeTab, setActiveTab] = useState("./");
 
-  useEffect(() => console.log(activeTab), [activeTab]);
+  useEffect(() => setActiveTab(`.${window.location.pathname}`), [activeTab]);
 
   return (
     <div
@@ -22,7 +22,9 @@ function Sidebar() {
           return (
             <Link to={val.link} key={key}>
               <li
-                className={`${styles.row} ${activeTab === val.link ? styles["row--active"] : ""}`}
+                className={`${styles.row} ${
+                  activeTab === val.link ? styles["row--active"] : ""
+                }`}
                 onClick={() => setActiveTab(val.link)}
               >
                 <div id="icon">{val.icon}</div>
@@ -38,7 +40,9 @@ function Sidebar() {
           return (
             <Link to={val.link} key={key}>
               <li
-                className={`${styles.rowSetting} ${activeTab === val.link ? styles["rowSetting--active"] : ""}`}
+                className={`${styles.rowSetting} ${
+                  activeTab === val.link ? styles["rowSetting--active"] : ""
+                }`}
                 onClick={() => setActiveTab(val.link)}
               >
                 <div id="icon-s">{val.icon}</div>

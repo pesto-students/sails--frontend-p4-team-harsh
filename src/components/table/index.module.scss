@@ -1,18 +1,30 @@
 @import "../../styles/variables/colors";
+@import "../../styles/global";
 
 .container {
   border-collapse: collapse;
   margin: 25px 0;
-  font-size: 20px;
+  font-size: 2rem;
   min-width: 400px;
   width: 100%;
+  border-radius: 10px;
+  overflow: auto;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
 }
 
 .container th {
   background-color: $colorActiveTab;
-  color: $colorTextSecondary;
+  color: $colorTextPrimary;
   text-align: center;
   padding: 12px 15px;
+
+  &:first-child {
+    border-top-left-radius: 10px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 10px;
+  }
 }
 
 .tbody td {
@@ -26,16 +38,27 @@
 }
 
 .tbody tr:nth-of-type(even) {
-  background-color: darken($colorBackgroundPrimary , 10%);
+  background-color: darken($colorBackgroundPrimary, 10%);
 }
 
 .tbody tr:last-of-type {
-  border-bottom: 4px solid $colorActiveTab;
+  // border-bottom: 3px solid $colorActiveTab;
+  border: none;
 }
 
 .tbody button {
-  box-shadow: 2px 2px rgb(152, 150, 150);
+  box-shadow: 0 2px 2px rgb(152, 150, 150);
   border-radius: 5px;
+  padding: 5px 15px;
   border: none;
-  width: 80px;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.delete {
+  :global(.MuiSvgIcon-root) {
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
 }
