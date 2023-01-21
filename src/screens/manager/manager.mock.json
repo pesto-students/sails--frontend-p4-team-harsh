@@ -1,34 +1,34 @@
 {
-    "data": [
-        {
-            "Name": "Kunal Sehji",
-            "Email": "kunalsehji@pesto.tech",
-            "PhoneNumber": "12345",
-            "Conversion Rate": "20%"
-        },
-        {
-            "Name": "Kunal Sehji",
-            "Email": "kunalsehji@pesto.tech",
-            "PhoneNumber": "12345",
-            "Conversion Rate": "20%"
-        },
-        {
-            "Name": "Kunal Sehji",
-            "Email": "kunalsehji@pesto.tech",
-            "PhoneNumber": "12345",
-            "Conversion Rate": "20%"
-        },
-        {
-            "Name": "Kunal Sehji",
-            "Email": "kunalsehji@pesto.tech",
-            "PhoneNumber": "12345",
-            "Conversion Rate": "20%"
-        },
-        {
-            "Name": "Kunal Sehji",
-            "Email": "kunalsehji@pesto.tech",
-            "PhoneNumber": "12345",
-            "Conversion Rate": "20%"
-        }
-    ]
+  "data": [
+    {
+      "Name": "Kunal Sehji",
+      "Email": "kunalsehji@pesto.tech",
+      "Phone Number": "12345",
+      "Conversion Rate": "20%"
+    },
+    {
+      "Name": "Kunal Sehji",
+      "Email": "kunalsehji@pesto.tech",
+      "Phone Number": "12345",
+      "Conversion Rate": "20%"
+    },
+    {
+      "Name": "Kunal Sehji",
+      "Email": "kunalsehji@pesto.tech",
+      "Phone Number": "12345",
+      "Conversion Rate": "20%"
+    },
+    {
+      "Name": "Kunal Sehji",
+      "Email": "kunalsehji@pesto.tech",
+      "Phone Number": "12345",
+      "Conversion Rate": "20%"
+    },
+    {
+      "Name": "Kunal Sehji",
+      "Email": "kunalsehji@pesto.tech",
+      "Phone Number": "12345",
+      "Conversion Rate": "20%"
+    }
+  ]
 }

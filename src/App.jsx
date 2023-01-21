@@ -6,13 +6,11 @@ import AdminDashboard from "./screens/adminDashboard";
 import LoginPage from "./screens/loginPage";
 import Leads from "./screens/leads";
 import Manager from "./screens/manager";
-import SalesTeam from "./screens/salesteam";
-import Basicdetail from "./components/popup/basicdetail";
-import Performance from "./components/popup/performance";
-// import DeleteUser from "./components/popup/deleteuser";
+import SalesTeam from "./screens/salesTeam";
+import AddCompany from "./screens/addCompany";
+
 // import Logout from "./components/popup/logout";
 // import NewLeads from "./components/newleads";
-// import Createnewuser from "./screens/createnewuser";
 import ResetPassword from "./screens/resetpassword";
 // import Conversionrate from "./components/conversionrate";
 
@@ -26,15 +24,11 @@ function App() {
           <Route path="/leads" element={<Leads />} />
           <Route path="/manager" element={<Manager />} />
           <Route path="/sales-team" element={<SalesTeam />} />
+          <Route path="/register-company" element={<AddCompany />} />
           <Route path="/reset-password" element={<ResetPassword />} />
         </Routes>
       </Layout>
-      {/* <Basicdetail
-        isOpen={true}
-        onCloseHandle={() => console.log("Clicked close")}
-      /> */}
-      {/* <Performance /> */}
-      {/* <DeleteUser message="Are you sure you want to delete user?" /> */}
+
       {/* <Logout /> */}
       {/* <NewLeads message="New Leads Today" /> */}
       {/* <Createnewuser /> */}

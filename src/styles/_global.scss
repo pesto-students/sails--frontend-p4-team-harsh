@@ -1,4 +1,5 @@
 @import "typography";
+@import "./variables/mixins";
 
 *,
 *::after,
@@ -31,8 +32,22 @@ html,
 body {
   font-family: $baseFontFamily;
   font-weight: $baseFontWeight;
-  font-size: 24px;
   color: $colorTextPrimary;
   margin: 0;
   height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+.button-primary {
+  padding: 10px 25px;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  @include boxShadow;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }

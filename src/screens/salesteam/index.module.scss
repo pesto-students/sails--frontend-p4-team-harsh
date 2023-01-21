@@ -2,18 +2,22 @@
 @import "../../styles/variables/mixins";
 
 .main {
-    background-color: $colorBackgroundPrimary;
-    width: 100%;
+  background-color: $colorBackgroundPrimary;
+  width: 100%;
+  padding: 20px;
 }
 
 .button {
-    @include button;
-    width: 200px;
-    background-color: $colorActiveTab;
-    color: $colorTextSecondary;
+  @include button;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  background-color: $colorActiveTab;
+  color: $colorTextSecondary;
 }
 
 .buttonDiv {
-    width: 100%;
-
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }

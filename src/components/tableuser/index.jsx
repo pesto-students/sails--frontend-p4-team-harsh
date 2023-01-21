@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./index.module.scss";
 
-const Index = ({ leadsData, openDetail }) => {
+const Index = ({ leadsData, openDetail, openDelete }) => {
   return (
     <table className={styles.container}>
       <thead>
@@ -23,7 +23,7 @@ const Index = ({ leadsData, openDetail }) => {
               <button onClick={openDetail}>Details</button>
             </td>
             <td>
-              <button>Delete</button>
+              <button onClick={openDelete}>Delete</button>
               {/* delete icon */}
             </td>
           </tr>

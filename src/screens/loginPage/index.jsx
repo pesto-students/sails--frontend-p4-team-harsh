@@ -1,7 +1,6 @@
 // import profile from "./login images/ user logo.png";
 // import background from "./login images/logo.jpeg";
 // import password from "./login images/passwordlogo.png";
-import { style } from "@mui/system";
 import React from "react";
 import styles from './index.module.scss';
 
