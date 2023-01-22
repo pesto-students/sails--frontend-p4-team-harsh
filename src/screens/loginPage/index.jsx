@@ -1,6 +1,6 @@
-// import profile from "./login images/ user logo.png";
-// import background from "./login images/logo.jpeg";
-// import password from "./login images/passwordlogo.png";
+import profile from "../../images/user logo.png";
+import password from "../../images/passwordlogo.png";
+import logo from "../../images/logo.jpeg"
 import React, { useState, useEffect } from "react";
 import styles from "./index.module.scss";
 import { loginUser } from "../../api";
@@ -37,37 +37,37 @@ const App = () => {
     <div className={styles.main}>
       <div className={styles.subMain}>
         <div>
-          {/* <div className={styles.image}>
-            <div className="image-container">
-              <img src={background} alt="profile image" className="profile" />
+          <div className={styles.image}>
+            <div className={styles.imageContainer}>
+              <img src={logo} alt="profile image" className={styles.profile} />
             </div>
-          </div> */}
+          </div>
           <div>
             <h1 className={styles.loginClass}>LOGIN HERE</h1>
-            <div>
-              {/* <img src={profile} alt="username" className="userimage" /> */}
+            <div className={styles.firstInput}>
+              <img src={profile} alt="username" className={styles.userImage} />
               <input
                 type="email"
                 placeholder="Enter email"
-                className="name"
+                className={styles.name}
                 name="email"
                 value={state.email}
                 onChange={handleChange}
               />
             </div>
             <div className={styles.secondInput}>
-              {/* <img src={password} alt="Username" className="passwordimage" /> */}
+              <img src={password} alt="Username" className={styles.passwordImage} />
               <input
                 type="password"
                 placeholder="Enter Password"
-                className="name"
+                className={styles.name}
                 name="password"
                 value={state.password}
                 onChange={handleChange}
               />
             </div>
             <div className={styles.buttonClass}>
-              <button className="button" onClick={handleLogin}>
+              <button className={styles.login} onClick={handleLogin}>
                 Login
               </button>
             </div>
