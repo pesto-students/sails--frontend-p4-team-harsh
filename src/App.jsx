@@ -9,7 +9,7 @@ import Manager from "./screens/manager";
 import SalesTeam from "./screens/salesTeam";
 import AddCompany from "./screens/addCompany";
 import Companies from "./screens/companies";
-// import Addcampaign from "./screens/addcampaign";
+import Addcampaign from "./screens/addcampaign";
 
 // import Logout from "./components/popup/logout";
 // import NewLeads from "./components/newleads";
@@ -29,6 +29,7 @@ function App() {
           <Route path="/register-company" element={<AddCompany />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/companies" element={<Companies />} />
+          <Route path="/add-campaign" element={<Addcampaign />} />
 
 
 
