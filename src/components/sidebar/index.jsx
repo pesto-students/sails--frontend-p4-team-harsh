@@ -5,9 +5,18 @@ import { Sidebarlist } from "./Sidebarlist";
 import { Setting } from "./Sidebarlist";
 import styles from "./index.module.scss";
 import { Link } from "react-router-dom";
+import Cookies from "universal-cookie";
 
 function Sidebar() {
   const [activeTab, setActiveTab] = useState("./");
+
+  const cookies = new Cookies();
+
+  const handleLogout = () => {
+    cookies.remove("access_token");
+    localStorage.clear();
+    window.location.href = "/login";
+  };
 
   useEffect(() => setActiveTab(`.${window.location.pathname}`), [activeTab]);
 
@@ -36,14 +45,16 @@ function Sidebar() {
       </ul>
 
       <ul className={styles.Setting}>
-        {Setting.map((val, key) => {
+        {Setting.map((val, index) => {
           return (
-            <Link to={val.link} key={key}>
+            <Link to={val.link} key={index}>
               <li
                 className={`${styles.rowSetting} ${
                   activeTab === val.link ? styles["rowSetting--active"] : ""
                 }`}
-                onClick={() => setActiveTab(val.link)}
+                onClick={() => {
+                  index === 2 ? handleLogout() : setActiveTab(val.link);
+                }}
               >
                 <div id="icon-s">{val.icon}</div>
                 <div id="title-s">{val.title}</div>

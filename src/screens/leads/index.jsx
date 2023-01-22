@@ -7,6 +7,7 @@ import {
   fetchLeadsByCompanyId,
   fetchSalesPersons,
   updateLeadAssignee,
+  fetchLeadsById,
 } from "../../api";
 
 const Index = () => {
@@ -16,6 +17,14 @@ const Index = () => {
 
   const fetchAllLeads = async () => {
     const response = await fetchLeadsByCompanyId();
+    console.log(response);
+    setLeads(response.data);
+  };
+
+  const fetchAllRelevantLeads = async () => {
+    const userId = localStorage.getItem("userId");
+
+    const response = await fetchLeadsById(userId);
     console.log(response);
     setLeads(response.data);
   };
@@ -33,7 +42,9 @@ const Index = () => {
   };
 
   useEffect(() => {
-    fetchAllLeads();
+    const userRole = localStorage.getItem("userRole");
+    console.log(userRole);
+    userRole === "sales" ? fetchAllRelevantLeads() : fetchAllLeads();
     fetchAllSalesPersons();
   }, []);
 
