@@ -3,10 +3,12 @@
 .deleteUser {
   height: 150px;
   width: 600px;
-  background-color: goldenrod;
+  background-color: $colorBackgroundPrimary;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  font-size: 25px;
+  backdrop-filter: brightness(50%);
 }
 
 .container {
@@ -38,6 +40,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: red;
 }
 
 // .vertical {
@@ -59,5 +62,5 @@ hr {
 .vertical {
   width: 1px;
   min-height: 100%;
-  background-color: white;
+  background-color: #ccc;
 }
