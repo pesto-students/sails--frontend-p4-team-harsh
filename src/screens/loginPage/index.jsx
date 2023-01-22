@@ -28,6 +28,7 @@ const App = () => {
     localStorage.setItem("userRole", response.data.user.role);
     localStorage.setItem("companyId", response.data.user.companyId);
     cookies.set("access_token", response.data.access_token, { path: "/" });
+    window.location.href = "/";
   };
 
   useEffect(() => console.log(state), [state]);
