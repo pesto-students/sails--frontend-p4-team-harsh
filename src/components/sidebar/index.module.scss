@@ -13,9 +13,9 @@
   overflow: hidden;
   font-size: 2rem;
 
-  @include respond(phone) {
-    display: none;
-  }
+  // @include respond(phone) {
+  //   width:;
+  // }
 
   a {
     text-decoration: none;
