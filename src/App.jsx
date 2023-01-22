@@ -10,6 +10,7 @@ import SalesTeam from "./screens/salesTeam";
 import AddCompany from "./screens/addCompany";
 import axios from "axios";
 import Companies from "./screens/companies";
+import Addcampaign from "./screens/addcampaign";
 
 // import Logout from "./components/popup/logout";
 // import NewLeads from "./components/newleads";
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/register-company" element={<AddCompany />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/companies" element={<Companies />} />
+          <Route path="/add-campaign" element={<Addcampaign />} />
         </Routes>
       </Layout>
 

@@ -8,6 +8,7 @@ import Reset from "@mui/icons-material/LockReset";
 import Logout from "@mui/icons-material/Logout";
 import BusinessIcon from "@mui/icons-material/Business";
 import Companies from '@mui/icons-material/Apartment';
+import Campaign from '@mui/icons-material/Campaign';
 
 export const Sidebarlist = [
   {
@@ -39,7 +40,12 @@ export const Sidebarlist = [
     title: "Companies",
     icon: <Companies />,
     link: "./companies",
-  }
+  },
+  {
+    title: "Add Campaign",
+    icon: <Campaign />,
+    link: "./add-campaign",
+  },
 ];
 export const Setting = [
   {
@@ -57,4 +63,5 @@ export const Setting = [
     icon: <Logout />,
     link: "./login",
   },
+
 ];
