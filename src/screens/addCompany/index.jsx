@@ -5,18 +5,19 @@ import styles from "./index.module.scss";
 
 const initState = {
   name: "",
-  apiKey: "ADSLKFJOWAEJFLAKJSDKLFDJF234243234",
-  validity: true,
+  //   apiKey: "ADSLKFJOWAEJFLAKJSDKLFDJF234243234",
+  //   validity: true,
   userCount: 0,
 };
 
 const Index = () => {
   const [state, setState] = useState(initState);
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     console.log("Submitting...");
-    const response = registerCompany(state);
+    const response = await registerCompany(state);
+    console.log(response);
   };
 
   const handleChange = (name, value) => {
