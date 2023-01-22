@@ -4,7 +4,7 @@ import Tile from "../../components/admindbtile";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import Piechart from "../../components/piechart";
-import { fetchUser } from "../../api";
+// import { fetchUsers } from "../../api";
 
 const Barchart = () => {
   const bar = {
@@ -94,15 +94,15 @@ const Barchart = () => {
 // }
 
 const AdminDashboard = () => {
-  useEffect(() => {
-    const fetchUserData = async () => {
-      console.log("Fetching user data...")
-      const response = await fetchUser();
-      console.log(response);
-    };
+  // useEffect(() => {
+  //   const fetchUserData = async () => {
+  //     console.log("Fetching user data...");
+  //     const response = await fetchUsers();
+  //     console.log(response);
+  //   };
 
-    fetchUserData();
-  }, []);
+  //   fetchUserData();
+  // }, []);
 
   return (
     <div className={styles.adminScreen}>

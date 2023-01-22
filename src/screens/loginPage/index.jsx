@@ -23,6 +23,10 @@ const App = () => {
   const handleLogin = async () => {
     const response = await loginUser(state);
     console.log(response);
+    localStorage.setItem("userEmail", response.data.user.email);
+    localStorage.setItem("userId", response.data.user.id);
+    localStorage.setItem("userRole", response.data.user.role);
+    localStorage.setItem("companyId", response.data.user.companyId);
     cookies.set("access_token", response.data.access_token, { path: "/" });
   };
 

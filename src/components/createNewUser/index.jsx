@@ -2,7 +2,13 @@ import React from "react";
 import styles from "./index.module.scss";
 import CustomPopup from "../popup/customPopup";
 
-const Index = ({ isOpen, onCloseHandle }) => {
+const Index = ({
+  isOpen,
+  onCloseHandle,
+  createUserState,
+  handleCreateUserStateUpdate,
+  handleCreateUserSubmit,
+}) => {
   return (
     <CustomPopup isOpen={isOpen} onCloseHandle={onCloseHandle}>
       <div className={styles.main}>
@@ -10,15 +16,27 @@ const Index = ({ isOpen, onCloseHandle }) => {
           <p>Create New User</p>
         </div>
         <div>
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={handleCreateUserSubmit}>
             <label className={styles.label}>
               Name
               <br />
               <input
                 className={styles.input}
                 type="text"
-                id="name"
-                placeholder="Enter name"
+                id="firstName"
+                name="firstName"
+                value={createUserState.firstName}
+                onChange={handleCreateUserStateUpdate}
+                placeholder="Enter First Name"
+              />
+              <input
+                className={styles.input}
+                type="text"
+                id="lastName"
+                name="lastName"
+                value={createUserState.lastName}
+                onChange={handleCreateUserStateUpdate}
+                placeholder="Enter Last Name"
               />
             </label>
             <br />
@@ -28,9 +46,13 @@ const Index = ({ isOpen, onCloseHandle }) => {
               <br />
               <input
                 className={styles.input}
+                disabled
                 type="text"
                 id="role"
-                placeholder="Manager"
+                name="role"
+                value={createUserState.role}
+                onChange={handleCreateUserStateUpdate}
+                placeholder="Enter Role"
               />
             </label>
             <br />
@@ -41,8 +63,11 @@ const Index = ({ isOpen, onCloseHandle }) => {
               <input
                 className={styles.input}
                 type="text"
-                id="contact"
-                placeholder="Enter Contact no"
+                id="phone"
+                name="phone"
+                placeholder="Enter Phone No."
+                value={createUserState.phone}
+                onChange={handleCreateUserStateUpdate}
               />
             </label>
             <br />
@@ -54,7 +79,10 @@ const Index = ({ isOpen, onCloseHandle }) => {
                 className={styles.input}
                 type="email"
                 id="email"
+                name="email"
                 placeholder="Enter Email"
+                value={createUserState.email}
+                onChange={handleCreateUserStateUpdate}
               />
             </label>
             <br />
@@ -66,7 +94,10 @@ const Index = ({ isOpen, onCloseHandle }) => {
                 className={styles.input}
                 type="password"
                 id="password"
+                name="password"
                 placeholder="Enter Password"
+                value={createUserState.password}
+                onChange={handleCreateUserStateUpdate}
               />
             </label>
             <br />
@@ -83,8 +114,25 @@ const Index = ({ isOpen, onCloseHandle }) => {
             </label>
             <br />
 
+            <div>
+              <input
+                className={styles.input}
+                type="text"
+                id="countryCode"
+                name="countryCode"
+                placeholder="Enter Country Code"
+                value={createUserState.countryCode}
+                onChange={handleCreateUserStateUpdate}
+              />
+            </div>
+
             <div className={styles.buttonDiv}>
-              <button className={styles.submit}>Submit</button>
+              <button
+                className={styles.submit}
+                onClick={handleCreateUserSubmit}
+              >
+                Submit
+              </button>
               <button className={styles.cancel}>Cancel</button>
             </div>
           </form>

@@ -13,10 +13,11 @@ const initState = {
 const Index = () => {
   const [state, setState] = useState(initState);
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     console.log("Submitting...");
-    const response = registerCompany(state);
+    const response = await registerCompany(state);
+    console.log(response);
   };
 
   const handleChange = (name, value) => {

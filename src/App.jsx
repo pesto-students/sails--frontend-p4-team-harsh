@@ -6,7 +6,7 @@ import AdminDashboard from "./screens/adminDashboard";
 import LoginPage from "./screens/loginPage";
 import Leads from "./screens/leads";
 import Manager from "./screens/manager";
-import SalesTeam from "./screens/salesteam";
+import SalesTeam from "./screens/salesTeam";
 import AddCompany from "./screens/addCompany";
 import axios from "axios";
 import Companies from "./screens/companies";
