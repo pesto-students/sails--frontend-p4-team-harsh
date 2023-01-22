@@ -24,8 +24,8 @@ const Index = ({
                 className={styles.input}
                 type="text"
                 id="firstName"
-                name="firstName"
-                value={createUserState.firstName}
+                name="firstname"
+                value={createUserState.firstname}
                 onChange={handleCreateUserStateUpdate}
                 placeholder="Enter First Name"
               />
@@ -33,8 +33,8 @@ const Index = ({
                 className={styles.input}
                 type="text"
                 id="lastName"
-                name="lastName"
-                value={createUserState.lastName}
+                name="lastname"
+                value={createUserState.lastname}
                 onChange={handleCreateUserStateUpdate}
                 placeholder="Enter Last Name"
               />

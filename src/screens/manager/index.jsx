@@ -9,8 +9,8 @@ import CreateNewUser from "../../components/createNewUser";
 import { createUser, fetchManagers } from "../../api";
 
 const initCreateUserState = {
-  firstName: "",
-  lastName: "",
+  firstname: "",
+  lastname: "",
   email: "",
   password: "",
   role: "manager",
@@ -26,6 +26,12 @@ const Index = () => {
   const [createUserState, setCreateUserState] = useState(initCreateUserState);
   const [managers, setManagers] = useState([]);
 
+  const fetchAllManagers = async () => {
+    const response = await fetchManagers();
+    console.log(response);
+    setManagers(response.data);
+  };
+
   const handleCreateUserStateUpdate = (e) => {
     setCreateUserState({ ...createUserState, [e.target.name]: e.target.value });
   };
@@ -36,15 +42,11 @@ const Index = () => {
     const payload = { ...createUserState, companyId };
     const response = await createUser(payload);
     console.log(response);
+    setIsAddUserOpen(false);
+    fetchAllManagers();
   };
 
   useEffect(() => {
-    const fetchAllManagers = async () => {
-      const response = await fetchManagers();
-      console.log(response);
-      setManagers(response.data);
-    };
-
     fetchAllManagers();
   }, []);
 
