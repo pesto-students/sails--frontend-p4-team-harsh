@@ -11,6 +11,7 @@ import AddCompany from "./screens/addCompany";
 import axios from "axios";
 import Companies from "./screens/companies";
 import Addcampaign from "./screens/addcampaign";
+import Campaigns from "./screens/campaigns";
 
 // import Logout from "./components/popup/logout";
 // import NewLeads from "./components/newleads";
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/companies" element={<Companies />} />
           <Route path="/add-campaign" element={<Addcampaign />} />
+          <Route path="/campaigns" element={<Campaigns />} />
         </Routes>
       </Layout>
 

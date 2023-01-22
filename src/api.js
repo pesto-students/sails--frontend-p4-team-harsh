@@ -81,3 +81,64 @@ export const getAllCompanies = async () => {
 
   return response;
 };
+
+// Campaign APIs
+export const createCampaign = async (payload) => {
+  const response = await axios.post(
+    `${process.env.REACT_APP_BASE_URL}/create/campaigns`,
+    payload
+  );
+
+  return response;
+};
+
+export const fetchCampaigns = async () => {
+  const companyId = localStorage.getItem("companyId");
+  const response = await authAxios.get(
+    `${process.env.REACT_APP_BASE_URL}/campaigns/${companyId}`
+  );
+
+  return response;
+};
+
+//Leads APIs
+export const fetchLeads = async () => {
+  const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/leads`);
+
+  return response;
+};
+
+export const fetchLeadsByCampaign = async (id) => {
+  const response = await axios.get(
+    `${process.env.REACT_APP_BASE_URL}/leads/${id}`
+  );
+
+  return response;
+};
+
+export const fetchLeadsByCompanyId = async () => {
+  const companyId = localStorage.getItem("companyId");
+
+  const response = await axios.get(
+    `${process.env.REACT_APP_BASE_URL}/leads/company/${companyId}`
+  );
+
+  return response;
+};
+
+export const updateLeadAssignee = async (id, email) => {
+  const response = await axios.patch(
+    `${process.env.REACT_APP_BASE_URL}/leads/${id}`,
+    { email }
+  );
+
+  return response;
+};
+
+export const fetchLeadsById = async (id) => {
+  const response = await axios.get(
+    `${process.env.REACT_APP_BASE_URL}/${id}/leads`
+  );
+
+  return response;
+};

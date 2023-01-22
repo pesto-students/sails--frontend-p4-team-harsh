@@ -7,8 +7,8 @@ import Username from "@mui/icons-material/AccountCircle";
 import Reset from "@mui/icons-material/LockReset";
 import Logout from "@mui/icons-material/Logout";
 import BusinessIcon from "@mui/icons-material/Business";
-import Companies from '@mui/icons-material/Apartment';
-import Campaign from '@mui/icons-material/Campaign';
+import Companies from "@mui/icons-material/Apartment";
+import Campaign from "@mui/icons-material/Campaign";
 
 export const Sidebarlist = [
   {
@@ -46,6 +46,11 @@ export const Sidebarlist = [
     icon: <Campaign />,
     link: "./add-campaign",
   },
+  {
+    title: "Campaigns",
+    icon: <Campaign />,
+    link: "./campaigns",
+  },
 ];
 export const Setting = [
   {
@@ -63,5 +68,4 @@ export const Setting = [
     icon: <Logout />,
     link: "./login",
   },
-
 ];

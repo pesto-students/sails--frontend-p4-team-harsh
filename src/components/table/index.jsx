@@ -2,7 +2,17 @@ import React from "react";
 import styles from "./index.module.scss";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-const Index = ({ data, openDetail, openDelete, type, disableUser }) => {
+const Index = ({
+  data,
+  openDetail,
+  openDelete,
+  type,
+  disableUser,
+  handleCampaignSelect,
+  salesPersons,
+  handleAssigneeChange,
+}) => {
+  console.log(salesPersons);
   if (data && data.length) {
     return (
       <table className={styles.container}>
@@ -13,8 +23,8 @@ const Index = ({ data, openDetail, openDelete, type, disableUser }) => {
             ))}
             {type === "leads" ? (
               <>
-                <th>CTA</th>
-                <th>Reschedule</th>
+                <th>Assignee</th>
+                {/* <th>Reschedule</th> */}
               </>
             ) : type === "companies" ? (
               <>
@@ -37,16 +47,40 @@ const Index = ({ data, openDetail, openDelete, type, disableUser }) => {
               {type === "leads" ? (
                 <>
                   <td>
-                    <button>Send Email</button>
+                    <select
+                      name="salesPersons"
+                      id="salesPersons"
+                      onChange={(e) =>
+                        handleAssigneeChange(item.id, e.target.value)
+                      }
+                    >
+                      <option value="">Select</option>
+                      {salesPersons?.map((item) => (
+                        <option value={item}>{item}</option>
+                      ))}
+                    </select>
                   </td>
-                  <td>
+                  {/* <td>
                     <input type="date" />
-                  </td>
+                  </td> */}
                 </>
               ) : type === "companies" ? (
                 <>
                   <td>
                     <button onClick={disableUser}>Disable</button>
+                  </td>
+                </>
+              ) : type === "campaigns" ? (
+                <>
+                  <td>
+                    <button onClick={() => handleCampaignSelect(item._id)}>
+                      Leads
+                    </button>
+                  </td>
+                  <td>
+                    <div className={styles.delete} onClick={openDelete}>
+                      <DeleteIcon color="warning" />
+                    </div>
                   </td>
                 </>
               ) : (
