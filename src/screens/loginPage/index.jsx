@@ -70,6 +70,9 @@ const App = () => {
               <button className={styles.login} onClick={handleLogin}>
                 Login
               </button>
+              <button className={styles.login} onClick={handleLogin}>
+                Register
+              </button>
             </div>
           </div>
           <div className={styles.forgotPassword}>
