@@ -12,12 +12,8 @@ import axios from "axios";
 import Companies from "./screens/companies";
 import Addcampaign from "./screens/addcampaign";
 import Campaigns from "./screens/campaigns";
-import Register from "./screens/register"
-
-// import Logout from "./components/popup/logout";
-// import NewLeads from "./components/newleads";
+import Register from "./screens/register";
 import ResetPassword from "./screens/resetpassword";
-// import Conversionrate from "./components/conversionrate";
 import Cookies from "universal-cookie";
 
 const cookies = new Cookies();
@@ -37,14 +33,9 @@ const App = () => {
           <Route path="/companies" element={<Companies />} />
           <Route path="/add-campaign" element={<Addcampaign />} />
           <Route path="/campaigns" element={<Campaigns />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </Layout>
-
-      {/* <Logout /> */}
-      {/* <NewLeads message="New Leads Today" /> */}
-      {/* <Createnewuser /> */}
-      {/* <Resetpassword /> */}
-      {/* <Conversionrate /> */}
     </div>
   );
 };
