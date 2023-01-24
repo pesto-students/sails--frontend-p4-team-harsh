@@ -29,8 +29,8 @@ const Index = ({ onSubmit, data, handleChange }) => {
             />
           </div>
         </div>
-        <div>API Key: {data.apiKey}</div>
-        <div>Valid: {data.validity ? "True" : "False"}</div>
+        {/* <div>API Key: {data.apiKey}</div>
+        <div>Valid: {data.validity ? "True" : "False"}</div> */}
         <button className="button-primary">Submit</button>
       </form>
     </div>
