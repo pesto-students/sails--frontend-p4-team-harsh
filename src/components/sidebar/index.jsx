@@ -23,7 +23,10 @@ function Sidebar() {
   return (
     <div
       className={styles.sideBar}
-      style={{ display: window.location.pathname === "/login" ? "none" : "" }}
+      style={{
+        display:
+          window.location.pathname === "/login" || "/register" ? "none" : "",
+      }}
     >
       <div className={styles.sails}>Sails</div>
       <ul className={styles.Sidebardata}>

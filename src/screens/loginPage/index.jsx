@@ -1,10 +1,11 @@
 import profile from "../../images/user logo.png";
 import password from "../../images/passwordlogo.png";
-import logo from "../../images/logo.jpeg"
+import logo from "../../images/logo.jpeg";
 import React, { useState, useEffect } from "react";
 import styles from "./index.module.scss";
 import { loginUser } from "../../api";
 import Cookies from "universal-cookie";
+import { Link } from "react-router-dom";
 
 const cookies = new Cookies();
 
@@ -15,7 +16,6 @@ const initState = {
 
 const App = () => {
   const [state, setState] = useState(initState);
-  // const [cookies, setCookie] = useCookies();
 
   const handleChange = (e) =>
     setState({ ...state, [e.target.name]: e.target.value });
@@ -56,7 +56,11 @@ const App = () => {
               />
             </div>
             <div className={styles.secondInput}>
-              <img src={password} alt="Username" className={styles.passwordImage} />
+              <img
+                src={password}
+                alt="Username"
+                className={styles.passwordImage}
+              />
               <input
                 type="password"
                 placeholder="Enter Password"
@@ -70,9 +74,9 @@ const App = () => {
               <button className={styles.login} onClick={handleLogin}>
                 Login
               </button>
-              <button className={styles.login} onClick={handleLogin}>
-                Register
-              </button>
+              <Link to="/register">
+                <button className={styles.login}>Register</button>
+              </Link>
             </div>
           </div>
           <div className={styles.forgotPassword}>
