@@ -12,6 +12,7 @@ import axios from "axios";
 import Companies from "./screens/companies";
 import Addcampaign from "./screens/addcampaign";
 import Campaigns from "./screens/campaigns";
+import Register from "./screens/register"
 
 // import Logout from "./components/popup/logout";
 // import NewLeads from "./components/newleads";
