@@ -1,0 +1,136 @@
+@import "../../styles/variables/colors";
+
+.main {
+    // background-image: url(../../images/background.jpeg);
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    padding: 90px 0 90px 0;
+    width: 100%;
+}
+
+.subMain {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+    width: 35%;
+    box-shadow: 0px 8px 32px 0px rgb(46, 45, 45);
+    background-color: rgba(62, 57, 57, 0.15);
+    border-radius: 50px;
+    backdrop-filter: blur(8.5px);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.imageContainer {
+    background-color: gray;
+    border-radius: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 115px;
+    width: 115px;
+}
+
+.profile {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    border-radius: 130px;
+}
+
+.loginClass {
+    text-align: center;
+
+}
+
+// .button {
+//     width: 380px;
+//     height: 50px;
+//     border-radius: 60px;
+//     background-color: rgb(90, 174, 237);
+//     color: rgb(0, 0, 0);
+//     font-size: 25px;
+//     font-weight: bold;
+
+// }
+
+// .buttonClass {
+//     padding-top: 30px;
+// }
+
+.forgotPassword {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.firstInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.secondInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.userImage {
+    width: 25px;
+    height: 25px;
+    left: 40px;
+    position: relative;
+}
+
+.passwordImage {
+    width: 25px;
+    height: 25px;
+    left: 40px;
+    position: relative;
+
+}
+
+.name {
+    width: 300px;
+    height: 50px;
+    border-radius: 60px;
+    box-shadow: inset 0px 0px 25px 0px $colorBackgroundWhite;
+    padding-left: 80px;
+}
+
+.buttonClass {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    height: 50px;
+
+
+    .login {
+        height: 30px;
+        margin: 20px;
+        width: 100px;
+        font-size: 18px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+// .register {
+//     height: 30px;
+//     margin: 20px;
+//     width: 100px;
+//     font-size: 18px;
+//     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+//     border-radius: 8px;
+//     border: none;
+//     cursor: pointer;
+// }

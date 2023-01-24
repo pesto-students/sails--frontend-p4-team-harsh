@@ -1,0 +1,52 @@
+@import "/src/styles/variables/mixins";
+@import "../../styles/variables/colors";
+
+
+.main {
+    padding-left: 20px;
+    width: 100%;
+    background-color: $colorBackgroundPrimary;
+
+}
+
+.title {
+    font-size: 30px;
+    padding-bottom: 35px;
+}
+
+
+
+.buttonDiv {
+    display: flex;
+    justify-content: left;
+    padding: 0px;
+
+}
+
+.submit {
+    margin: 30px;
+    margin-left: 0;
+    @include button;
+
+}
+
+.cancel {
+
+    margin: 30px;
+    @include button;
+}
+
+.input {
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid lighten($colorActiveTab , 10%);
+    margin: 20px;
+    margin-left: 0px;
+    width: 90%;
+}
+
+.label {
+    padding: 20px;
+    padding-left: 0;
+    font-size: 20px;
+}

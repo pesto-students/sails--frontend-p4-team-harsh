@@ -1,0 +1,42 @@
+@import "../../styles/variables/colors";
+
+.main {
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 10px;
+    background-color: $colorBackgroundWhite;
+    border-radius: 5px;
+
+}
+
+.title {
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    color: $colorTextComponent;
+
+}
+
+
+
+
+
+
+.count {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-right: 30px;
+}

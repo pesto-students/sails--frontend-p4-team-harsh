@@ -1,0 +1,70 @@
+@import "../../styles/variables/colors";
+@import "../../styles/global";
+
+.container {
+  border-collapse: collapse;
+  margin: 15px 0 25px 0;
+  font-size: 2rem;
+  // min-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  overflow-x: scroll;
+  white-space: nowrap;
+
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+.container th {
+  background-color: $colorActiveTab;
+  color: $colorTextPrimary;
+  text-align: center;
+  padding: 12px 15px;
+  min-width: 175px;
+
+  &:first-child {
+    border-top-left-radius: 10px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 10px;
+  }
+}
+
+.tbody td {
+  padding: 12px 15px;
+  text-align: center;
+  color: $colorTextComponent;
+  min-width: 175px;
+
+}
+
+.tbody tr {
+  border-bottom: 1px solid;
+}
+
+.tbody tr:nth-of-type(even) {
+  background-color: darken($colorBackgroundPrimary, 10%);
+}
+
+.tbody tr:last-of-type {
+  // border-bottom: 3px solid $colorActiveTab;
+  border: none;
+}
+
+.tbody button {
+  box-shadow: 0 2px 2px rgb(152, 150, 150);
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: none;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.delete {
+  :global(.MuiSvgIcon-root) {
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+}
