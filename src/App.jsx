@@ -15,6 +15,7 @@ import Campaigns from "./screens/campaigns";
 import Register from "./screens/register";
 import ResetPassword from "./screens/resetpassword";
 import Cookies from "universal-cookie";
+import ProtectedRoutes from "./protectedRoutes";
 
 const cookies = new Cookies();
 
@@ -23,17 +24,19 @@ const App = () => {
     <div className="App">
       <Layout>
         <Routes>
-          <Route path="/" element={<AdminDashboard />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/leads" element={<Leads />} />
-          <Route path="/manager" element={<Manager />} />
-          <Route path="/sales-team" element={<SalesTeam />} />
-          <Route path="/register-company" element={<AddCompany />} />
-          <Route path="/reset-password" element={<ResetPassword />} />
-          <Route path="/companies" element={<Companies />} />
-          <Route path="/add-campaign" element={<Addcampaign />} />
-          <Route path="/campaigns" element={<Campaigns />} />
           <Route path="/register" element={<Register />} />
+          <Route element={<ProtectedRoutes />}>
+            <Route path="/" element={<AdminDashboard />} />
+            <Route path="/leads" element={<Leads />} />
+            <Route path="/manager" element={<Manager />} />
+            <Route path="/sales-team" element={<SalesTeam />} />
+            <Route path="/register-company" element={<AddCompany />} />
+            <Route path="/reset-password" element={<ResetPassword />} />
+            <Route path="/companies" element={<Companies />} />
+            <Route path="/add-campaign" element={<Addcampaign />} />
+            <Route path="/campaigns" element={<Campaigns />} />
+          </Route>
         </Routes>
       </Layout>
     </div>

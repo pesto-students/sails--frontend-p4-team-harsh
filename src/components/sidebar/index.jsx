@@ -18,6 +18,15 @@ function Sidebar() {
     window.location.href = "/login";
   };
 
+  const getAuth = () => {
+    const accessToken = cookies.get("access_token");
+    console.log(accessToken);
+  };
+
+  useEffect(() => {
+    getAuth();
+  }, []);
+
   useEffect(() => setActiveTab(`.${window.location.pathname}`), [activeTab]);
 
   return (
@@ -25,7 +34,10 @@ function Sidebar() {
       className={styles.sideBar}
       style={{
         display:
-          window.location.pathname === "/login" || "/register" ? "none" : "",
+          window.location.pathname === "/login" ||
+          window.location.pathname === "/register"
+            ? "none"
+            : "",
       }}
     >
       <div className={styles.sails}>Sails</div>
