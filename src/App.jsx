@@ -15,7 +15,7 @@ import Campaigns from "./screens/campaigns";
 import Register from "./screens/register";
 import ResetPassword from "./screens/resetpassword";
 import Cookies from "universal-cookie";
-import ProtectedRoutes from "./protectedRoutes";
+import ProtectedRoutes from "./ProtectedRoutes";
 
 const cookies = new Cookies();
 
