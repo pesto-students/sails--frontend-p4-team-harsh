@@ -20,7 +20,6 @@ function Sidebar() {
 
   const getAuth = () => {
     const accessToken = cookies.get("access_token");
-    console.log(accessToken);
   };
 
   useEffect(() => {
